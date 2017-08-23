@@ -15,8 +15,8 @@
  */
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '23.0.3'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7

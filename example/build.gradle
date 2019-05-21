@@ -23,7 +23,7 @@ apply from: '../common/android-signing-utils.gradle'
 android {
     defaultConfig {
         applicationId "com.h6ah4i.android.example.advrecyclerview"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 15
         versionName "0.8.5"

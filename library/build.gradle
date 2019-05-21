@@ -32,7 +32,7 @@ apply from: '../common/android-set-common-properties.gradle'
 
 android {
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 28
 
 

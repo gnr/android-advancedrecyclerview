@@ -59,7 +59,7 @@ android {
             consumerProguardFiles 'proguard-rules.pro'
         }
     }
-    buildToolsVersion "28.0.3"
+    buildToolsVersion "29.0.2"
 }
 
 dependencies {

@@ -18,10 +18,12 @@ package com.h6ah4i.android.widget.advrecyclerview.draggable;
 
 import com.h6ah4i.android.widget.advrecyclerview.draggable.annotation.DraggableItemStateFlags;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 /**
  * Interface which provides required information for dragging item.
  *
- * Implement this interface on your sub-class of the {@link android.support.v7.widget.RecyclerView.ViewHolder}.
+ * Implement this interface on your sub-class of the {@link RecyclerView.ViewHolder}.
  */
 public interface DraggableItemViewHolder {
     /**

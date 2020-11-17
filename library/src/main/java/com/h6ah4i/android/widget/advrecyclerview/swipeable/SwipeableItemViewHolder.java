@@ -18,10 +18,12 @@ package com.h6ah4i.android.widget.advrecyclerview.swipeable;
 
 import android.view.View;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 /**
  * Interface which provides required information for swiping item.
  *
- * Implement this interface on your sub-class of the {@link android.support.v7.widget.RecyclerView.ViewHolder}.
+ * Implement this interface on your sub-class of the {@link RecyclerView.ViewHolder}.
  */
 public interface SwipeableItemViewHolder {
     /**

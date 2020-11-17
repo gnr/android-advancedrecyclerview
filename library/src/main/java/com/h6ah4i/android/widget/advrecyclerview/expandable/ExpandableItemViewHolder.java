@@ -18,9 +18,11 @@ package com.h6ah4i.android.widget.advrecyclerview.expandable;
 
 import com.h6ah4i.android.widget.advrecyclerview.expandable.annotation.ExpandableItemStateFlags;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 /**
  * <p>Interface which provides required information for expanding item.</p>
- * <p>Implement this interface on your sub-class of the {@link android.support.v7.widget.RecyclerView.ViewHolder}.</p>
+ * <p>Implement this interface on your sub-class of the {@link RecyclerView.ViewHolder}.</p>
  */
 public interface ExpandableItemViewHolder {
     /**

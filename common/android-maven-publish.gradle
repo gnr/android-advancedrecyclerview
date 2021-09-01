@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-apply plugin: 'maven'
+apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
 // Declare these properties in project's extension
@@ -73,37 +73,37 @@ signing {
     sign configurations.archives
 }
 
-uploadArchives {
-    repositories.mavenDeployer {
-        beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
-
-        repository(url: "file://${repoDir}")
-
-        pom.groupId = dataProps.POM_GROUP_ID
-        pom.artifactId = dataProps.POM_ARTIFACT_ID
-        pom.version = dataProps.VERSION_NAME
-        pom.project {
-            licenses {
-                license {
-                    name dataProps.POM_APACHE_V2_LICENCE_NAME
-                    url dataProps.POM_APACHE_V2_LICENCE_URL
-                    distribution dataProps.POM_APACHE_V2_LICENCE_DIST
-                }
-            }
-            scm {
-                url dataProps.POM_SCM_URL
-                connection dataProps.POM_SCM_CONNECTION
-                developerConnection dataProps.POM_SCM_DEVELOPER_CONNECTION
-            }
-            developers {
-                developer {
-                    id dataProps.POM_DEVELOPER_ID
-                    name dataProps.POM_DEVELOPER_NAME
-                }
-            }
-        }
-    }
-}
+//uploadArchives {
+//    repositories.mavenDeployer {
+//        beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+//
+//        repository(url: "file://${repoDir}")
+//
+//        pom.groupId = dataProps.POM_GROUP_ID
+//        pom.artifactId = dataProps.POM_ARTIFACT_ID
+//        pom.version = dataProps.VERSION_NAME
+//        pom.project {
+//            licenses {
+//                license {
+//                    name dataProps.POM_APACHE_V2_LICENCE_NAME
+//                    url dataProps.POM_APACHE_V2_LICENCE_URL
+//                    distribution dataProps.POM_APACHE_V2_LICENCE_DIST
+//                }
+//            }
+//            scm {
+//                url dataProps.POM_SCM_URL
+//                connection dataProps.POM_SCM_CONNECTION
+//                developerConnection dataProps.POM_SCM_DEVELOPER_CONNECTION
+//            }
+//            developers {
+//                developer {
+//                    id dataProps.POM_DEVELOPER_ID
+//                    name dataProps.POM_DEVELOPER_NAME
+//                }
+//            }
+//        }
+//    }
+//}
 
 artifacts {
     archives androidSourcesJar

@@ -16,13 +16,14 @@
 
 package com.h6ah4i.android.widget.advrecyclerview.utils;
 
-import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.ViewGroup;
 
 import java.lang.ref.WeakReference;
 import java.util.Collections;
 import java.util.List;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public class BaseWrapperAdapter<VH extends RecyclerView.ViewHolder>
         extends RecyclerView.Adapter<VH> {

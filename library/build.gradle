@@ -33,7 +33,7 @@ apply from: '../common/android-set-common-properties.gradle'
 android {
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 34
+        targetSdkVersion 33
 
 
         def dataProps = new Properties()
